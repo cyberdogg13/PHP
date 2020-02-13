@@ -9,7 +9,16 @@
 </head>
 <body>
 <h1>hoofdmenu!</h1>
-<a href="Hoofdstuk1/opdracht1.php">opracht Hoofdstuk 1</a>
+<a href="Hoofdstuk1/opdracht1.php">opracht 1 Hoofdstuk 1</a>
+<br>
+<a href="Hoofdstuk2/thomasedison.php">Hoofdtuk2 quote 1</a>
+<br>
+<a href="Hoofdstuk2/albertplesman.php">Hoofdtuk2 quote 2</a>
+<br>
+<a href="Hoofdstuk2/tyrabanks.php">Hoofdtuk2 quote 3</a>
+<br>
+<a href="Hoofdstuk2/hermanfinkers.php">Hoofdtuk2 quote 4</a>
+<br>
 <a href="ding.php">DING</a>
 
 </body>
