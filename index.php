@@ -10,6 +10,7 @@
 <body>
 <h1>hoofdmenu!</h1>
 <a href="Hoofdstuk1/opdracht1.php">opracht Hoofdstuk 1</a>
+<a href="ding.php">DING</a>
 
 </body>
 </html>

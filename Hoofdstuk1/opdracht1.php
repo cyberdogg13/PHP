@@ -1,5 +1,5 @@
 <?php
-echo "en idt dan????";
+echo "en dit dan????";
 ?>
 
 <a href="../index.php"></a>
