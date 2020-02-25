@@ -20,6 +20,9 @@
 <a href="Hoofdstuk2/hermanfinkers.php">Hoofdtuk2 quote 4</a>
 <br>
 <a href="ding.php">DING</a>
+<br>
+<a href="Hoofdstuk3/index.php">Hoofdtuk 3 Opdracht 1</a>
+<br>
 
 </body>
 </html>
