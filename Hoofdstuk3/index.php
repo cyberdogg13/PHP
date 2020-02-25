@@ -16,11 +16,11 @@
     <title>Document</title>
 </head>
 <body>
-//<?php
-//for($i = 1; $i <= 9; $i++) {
-//    echo "<img src='plaatjes/vogelbekdier". $i . ".jpg'>";
-//}
-//?>
-<img src="plaatjes/vogelbekdier1.jpg" alt="vogelbekdier1">
+<?php
+for($i = 1; $i <= 9; $i++) {
+    echo "<img src='plaatjes/vogelbekdier". $i . ".png'>";
+}
+?>
+<img src="plaatjes/hat.png" alt="hoedje">
 </body>
 </html>
