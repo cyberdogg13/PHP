@@ -18,7 +18,7 @@
 <body>
 <?php
 for($i = 1; $i <= 9; $i++) {
-    echo "<img src='plaatjes/vogelbekdier". $i . ".png'>";
+    echo "<img src=plaatjes/vogelbekdier$i.jpg>";
 }
 ?>
 <img src="plaatjes/hat.png" alt="hoedje">
