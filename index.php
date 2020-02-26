@@ -23,6 +23,10 @@
 <br>
 <a href="Hoofdstuk3/index.php">Hoofdtuk 3 Opdracht 1</a>
 <br>
+<a href="Hoofdstuk3/Opdracht2.php">Hoofdtuk 3 Opdracht 2</a>
+<br>
+<a href="Hoofdstuk3/Opdracht3.php">Hoofdtuk 3 Opdracht 3</a>
+<br>
 
 </body>
 </html>
