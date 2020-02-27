@@ -12,39 +12,44 @@
 </head>
 <body>
 <?php
-$arry [1] = 25;
-$arry [2] = 32;
-$arry [3] = 11;
-$arry [4] = 23;
-$arry [5] = "De Spartelkuikens";
-$arry [6] = "De Waterbuffels";
-$arry [7] = "Plonsmderin";
-$arry [8] = "Bommetje";
+$arry ["De Spartelkuikens"] = 25;
+$arry ["De Waterbuffels"] = 32;
+$arry ["Plonsmderin"] = 11;
+$arry ["Bommetje"] = 23;
 
-echo "<table>";
-echo "<tr>";
-echo "<td>" . $arry[5] . "</td>";
-echo "<td>" . $arry[1] . "</td>";
-echo "</tr>";
-echo "<tr>";
-echo "<td>" . $arry[6] . "</td>";
-echo "<td>" . $arry[2] . "</td>";
-echo "</tr>";
-echo "<tr>";
-echo "<td>" . $arry[7] . "</td>";
-echo "<td>" . $arry[3] . "</td>";
-echo "</tr>";
-echo "<tr>";
-echo "<td>" . $arry[8] . "</td>";
-echo "<td>" . $arry[4] . "</td>";
-echo "<img src='plaatjes\Sign_-_Navigation_60-512.png'>";
-echo "</tr>";
+echo "<table cellspacing='0px' cellpadding='10'>";
+foreach ($arry as $zwemclub) {
+    echo "<tr>";
+    echo "<td>" . key($arry) . "</td>";
+    echo "<td>$zwemclub</td>";
+    $aantal = floor($zwemclub / 5);
+    echo "<td class='plaatjes'>";
+    for ($i = 0; $i < $aantal; $i++) {
+        ?>
+        <img src="plaatjes/Sign_-_Navigation_60-512.png" alt="">
+        <?php
+    }
+    echo "</td>";
+    echo "</tr>";
+    next($arry);
+}
 echo "</table>";
 
+
+echo key($arry);
 ?>
 <style>
-    table, td, tr {
+    td, tr {
         border: 1px solid black;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .plaatjes {
+        border: none;
     }
 </style>
 </body>

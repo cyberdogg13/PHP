@@ -1,10 +1,13 @@
 <?php
 
+
+
+echo "mensen " . $a . $b . " maken, werken " . $c;
+
+
 $a = "die geen fout";
 $b = "en";
 $c = "niet.";
-
-echo "mensen " . $a . $b . " maken, werken " . $c;
 ?>
 <h3>- albert plesman</h3>
 <br>
