@@ -1,9 +1,4 @@
 <?php
-/**
- *
- *
- *
- */
 ?>
 
 <!doctype html>
@@ -17,10 +12,24 @@
 </head>
 <body>
 <?php
-for($i = 1; $i <= 9; $i++) {
-    echo "<img src=plaatjes/vogelbekdier$i.jpg>";
+$leeftijd = 2;
+$prijs = 10;
+
+if ($leeftijd > 65){
+    $prijs = $prijs * 0.5;
 }
+
+
+if ($leeftijd <= 12){
+    $prijs = $prijs * 0.5;
+}
+
+
+if ($leeftijd <= 2){
+    $prijs = 0;
+}
+echo $prijs;
 ?>
-<img src="plaatjes/hat.png" alt="hoedje">
+
 </body>
 </html>

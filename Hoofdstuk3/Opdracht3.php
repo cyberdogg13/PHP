@@ -1,9 +1,4 @@
 <?php
-/**
- *
- *
- *
- */
 ?>
 
 <!doctype html>
@@ -17,10 +12,19 @@
 </head>
 <body>
 <?php
-for($i = 1; $i <= 9; $i++) {
-    echo "<img src=plaatjes/vogelbekdier$i.jpg>";
+echo "orginele code <br>";
+
+$x = 35;
+while ($x >= 25) {
+    echo "hoppelepee";
+    $x--;
+}
+echo "<br>";
+echo "oplossing code <br>";
+for ($y = 35; $y >= 25; $y--){
+    echo "komt niets van in";
 }
 ?>
-<img src="plaatjes/hat.png" alt="hoedje">
+
 </body>
 </html>

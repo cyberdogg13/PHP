@@ -1,9 +1,4 @@
 <?php
-/**
- *
- *
- *
- */
 ?>
 
 <!doctype html>
@@ -17,10 +12,18 @@
 </head>
 <body>
 <?php
-for($i = 1; $i <= 9; $i++) {
-    echo "<img src=plaatjes/vogelbekdier$i.jpg>";
+for ($i = 0; $i <= 90; $i++){
+    for ($j = 0; $j<$i; $j++){
+        echo "*";
+    }
+    echo "*<br>";
 }
 ?>
-<img src="plaatjes/hat.png" alt="hoedje">
+
 </body>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
 </html>

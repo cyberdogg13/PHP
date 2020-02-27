@@ -1,9 +1,4 @@
 <?php
-/**
- *
- *
- *
- */
 ?>
 
 <!doctype html>
@@ -16,11 +11,24 @@
     <title>Document</title>
 </head>
 <body>
+
 <?php
-for($i = 1; $i <= 9; $i++) {
-    echo "<img src=plaatjes/vogelbekdier$i.jpg>";
+for ($i = 1; $i <= 9; $i++) {
+    if ($i % 2 == 0) {
+        echo "<img src=plaatjes/vogelbekdier$i.jpg class='rood'>";
+    } else {
+        echo "<img src=plaatjes/vogelbekdier$i.jpg class='groen'>";
+    }
 }
 ?>
-<img src="plaatjes/hat.png" alt="hoedje">
+<style>
+    .rood {
+        border: red solid 5px;
+    }
+
+    .groen {
+        border: green solid 5px;
+    }
+</style>
 </body>
 </html>
