@@ -37,7 +37,7 @@ if (isset($_POST["knop"]) && (isset($_POST['wachtwoord']) && !empty($_POST['wach
     <br>
     <a href="admin.php">de website</a>
     <br>
-    <a href="loginformulier.php?loguit">uitloggen</a>
+    <a href="test.php?loguit">uitloggen</a>
 </form>
 </body>
 </html>

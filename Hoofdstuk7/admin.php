@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if (isset($_SESSION["E-Mail"])){
-    echo "<h1>welkom ".$_SESSION["E-Mail"] ." op deze website</h1>";
+if (isset($_SESSION["user"])){
+    echo "<h1>welkom ".$_SESSION["user"] ." op deze website</h1>";
 } else{
   Header('location:loginformulier.php');
 }
