@@ -2,20 +2,30 @@
 session_start();
 
 $users = array(
+    "tim" => "pop",
     "janjaap" => "1234",
     "bert" => "1235",
     "jans" => "1236",
 );
+if  (isset($_GET["loguit"])){
+    $_SESSION = array();
+    session_destroy();
+}
 
 
 if (isset($_POST["knop"]) && (isset($_POST['wachtwoord']) && !empty($_POST['wachtwoord']))
     && isset($users[$_POST["login"]])
     && $users[$_POST["login"]] == $_POST["wachtwoord"]) {
     $_SESSION["user"] = $_POST["login"];
-    $bericht = "welkom" . $_SESSION["user"];
+    $bericht = "welkom " . $_SESSION["user"];
 } else {
     $bericht = "login";
 }
+
+if (isset($_SESSION["user"])){
+    $bericht = "welkom " . $_SESSION["user"];
+}
+
 ?>
 
 <!doctype html>

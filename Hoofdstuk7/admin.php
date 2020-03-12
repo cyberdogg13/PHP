@@ -7,4 +7,6 @@ if (isset($_SESSION["user"])){
   Header('location:loginformulier.php');
 }
 echo "<p><a href='loginformulier.php'>terug naar de loginpagina</a></p>";
+
+
 ?>
