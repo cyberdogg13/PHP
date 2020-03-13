@@ -7,6 +7,4 @@ if (isset($_SESSION["user"]) && $_SESSION["user"]["rol"] == "admin"){
   Header('location:loginformulier.php');
 }
 echo "<p><a href='loginformulier.php'>terug naar de loginpagina</a></p>";
-
-
 ?>

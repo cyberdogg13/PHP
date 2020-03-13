@@ -47,7 +47,7 @@ if (isset($_SESSION["user"]["naam"])) {
     Wachtwoord <input type="password" name="wachtwoord" value="">
     <input type=submit name="knop" value=verstuur>
     <br>
-    <a href="admin.php">de website</a>
+    <P><a href="admin.php">de website<br> (Alleen voor admins!)</a></p>
     <br>
     <a href="loginformulier.php?loguit">uitloggen</a>
 </form>
