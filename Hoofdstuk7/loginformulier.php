@@ -2,28 +2,30 @@
 session_start();
 
 $users = array(
-    "tim" => "pop",
-    "janjaap" => "1234",
-    "bert" => "1235",
-    "jans" => "1236",
+    "tim" => array("wachtwoord" => "pop", "rol" => "admin"),
+    "janjaap" => array("wachtwoord" => "1234", "rol" => "admin"),
+    "bert" => array("wachtwoord" => "1235", "rol" => "gebruiker"),
+    "jans" => array("wachtwoord" => "1236", "rol" => "gerbruiker"),
 );
-if  (isset($_GET["loguit"])){
+if (isset($_GET["loguit"])) {
     $_SESSION = array();
     session_destroy();
 }
-
-
-if (isset($_POST["knop"]) && (isset($_POST['wachtwoord']) && !empty($_POST['wachtwoord']))
+if (isset($_POST["knop"])
+    && (isset($_POST['wachtwoord']) && !empty($_POST['wachtwoord']))
     && isset($users[$_POST["login"]])
-    && $users[$_POST["login"]] == $_POST["wachtwoord"]) {
-    $_SESSION["user"] = $_POST["login"];
-    $bericht = "welkom " . $_SESSION["user"];
+    && $users[$_POST["login"]]["wachtwoord"] == $_POST["wachtwoord"]) {
+    $_SESSION["user"] = array(
+        "naam" => $_POST["login"],
+        "wachtwoord" => $users[$_POST["login"]]["wachtwoord"],
+        "rol" => $users[$_POST["login"]]["rol"]);
+//    $bericht = "welkom " . $_SESSION["user"]["naam"]. " de " . $_SESSION["user"]["rol"];
 } else {
-    $bericht = "login";
+    $bericht = "eerst inloggen";
 }
 
-if (isset($_SESSION["user"])){
-    $bericht = "welkom " . $_SESSION["user"];
+if (isset($_SESSION["user"]["naam"])) {
+    $bericht = "welkom " . $_SESSION["user"]["naam"] . " de " . $_SESSION["user"]["rol"];
 }
 
 ?>
